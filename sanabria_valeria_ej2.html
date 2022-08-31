@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Agregar cajitas</h1>
-<form class="cajitas">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Static Template</title>
+  <style>
+    .caja {
+      margin: 5px;
+      background-color: red;
+      display: inline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Agregar cajitas</h1>
+    <form class="cajitasForm">
       <label for="">Cantidad</label>
-      <input type="text" class="cajas" />
-<input
-        type="button"
-        class="btnAgregar"
-        value="Agregar"
-      />
-      <script src="script/script.js"></script>
-  </body>
+      <input type="text" class="cajasCantidad" />
+      <input type="button" class="btnAgregar" value="Agregar" />
+    </form>
+    <div class="cajas"></div>
+    <script src="script/script.js"></script>
+</body>
+
 </html>
